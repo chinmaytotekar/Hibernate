@@ -24,7 +24,6 @@ public class Department {
 	private String departmentName;
 	
 	@OneToMany(mappedBy="department", cascade={CascadeType.ALL})
-	//@IndexColumn(name="idx")
 	private List<Employee> employees;
 
 	public Long getDepartmentId() {
